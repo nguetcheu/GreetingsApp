@@ -27,12 +27,12 @@
         android:id="@+id/myEditText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/myTextView2"
+        app:layout_constraintBottom_toTopOf="@+id/myBtn1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myTextView1" />
 
     <Button
-        android:id="@+id/myTextView2"
+        android:id="@+id/myBtn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Say Hello!"
