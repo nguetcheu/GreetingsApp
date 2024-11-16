@@ -32,11 +32,14 @@ public class MainActivity extends AppCompatActivity {
         // Création du listener pour le bouton
         View.OnClickListener btnListener = new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-               Button button = (Button) v;
-               String result = myEditText.getText().toString();
+            public void onClick(View btnView) {
+               Button button = (Button) btnView;
+               String result = "Welcome "+ myEditText.getText().toString() + " to our App";
                Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
             }
         };
+
+        // Liaison du listener au button
+        myButton.setOnClickListener(btnListener);
     }
 }
